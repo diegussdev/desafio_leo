@@ -1,17 +1,27 @@
 <?php
 
-require_once __DIR__ . '/RouteSwitch.php';
+namespace DesafioLeo\Router;
 
 class Router extends RouteSwitch
 {
     public function run(string $requestUri)
     {
         $route = substr($requestUri, 1);
+        $route = (parse_url($route));
+        $route = array_key_exists('path', $route) ? $route['path'] : '';
+
+        $arguments = [];
+
+        if ($_POST) {
+            $arguments = $_POST;
+        } elseif ($_GET) {
+            $arguments = $_GET;
+        }
 
         if ($route === '') {
             $this->home();
         } else {
-            $this->$route();
+            $this->$route($arguments);
         }
     }
 }

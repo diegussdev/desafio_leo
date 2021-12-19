@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/src/Router/Router.php';
+require __DIR__ . '/vendor/autoload.php';
+
+use DesafioLeo\Router\Router;
 
 $requestUri = $_SERVER['REQUEST_URI'];
 

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/diegussdev/desafio#readme",
   "dependencies": {
     "grunt": "^1.4.1",
-    "grunt-contrib-concat": "^2.0.0"
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.1"
   }
 }

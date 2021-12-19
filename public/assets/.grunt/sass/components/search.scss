@@ -1,0 +1,28 @@
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    background-color: $background-color;
+    border-radius: 30px;
+    padding: 10px 20px;
+    height: 20px;
+    width: 250px;
+    display: flex;
+    border: 1px solid gray;
+
+
+    input {
+        background-color: transparent;
+        border-color: transparent;
+        width: 100%;
+
+        :focus {
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    i {
+        color: gray;
+    }
+}

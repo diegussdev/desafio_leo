@@ -1,0 +1,35 @@
+.header-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+
+    img {
+        border-radius: 50% !important;
+        border: 2px solid gray;
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+    }
+
+    .info {
+        margin: 0px 10px;
+        font-weight: bold;
+
+
+        span {
+            font-size: 12px;
+            color: gray;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+    }
+
+    i {
+        color: gray;
+    }
+}

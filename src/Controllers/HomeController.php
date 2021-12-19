@@ -2,10 +2,12 @@
 
 namespace DesafioLeo\Controllers;
 
+use DesafioLeo\Utility;
+
 class HomeController
 {
     public function index()
     {
-        echo file_get_contents("views/pages/home.html");
+        Utility::showPage('home.php');
     }
 }

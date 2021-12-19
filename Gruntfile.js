@@ -20,10 +20,20 @@ module.exports = grunt => {
                 }
             }
         },
+        watch: {
+            src: {
+                options: {
+                    livereload: true,
+                },
+                tasks: ['minify'],
+                files: ['public/assets/.grunt/sass/**/*.scss', 'public/assets/.grunt/js/**/*.js'],
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('minify', ['sass', 'uglify']);
 };

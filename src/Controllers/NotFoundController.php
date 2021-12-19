@@ -2,10 +2,12 @@
 
 namespace DesafioLeo\Controllers;
 
+use DesafioLeo\Utility;
+
 class NotFoundController
 {
     public function notFoundPage()
     {
-        echo file_get_contents("views/pages/not-found.html");
+        Utility::showPage('not-found.php');
     }
 }

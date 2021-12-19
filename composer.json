@@ -1,0 +1,15 @@
+{
+    "name": "diegussdev/desafio_leo",
+    "autoload": {
+        "psr-4": {
+            "Diegussdev\\DesafioLeo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Diego P. Costa",
+            "email": "diegussdev@gmail.com"
+        }
+    ],
+    "require": {}
+}

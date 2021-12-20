@@ -1,6 +1,7 @@
 $main-color: black;
 $primary-text-color: black;
 $background-color: #efefef;
-$success-color: green;
+$success-color: rgb(0, 160, 0);
 
 $content-large: 1024px;
+$card-size: calc(($content-large / 4) - 15px);

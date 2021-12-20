@@ -1,0 +1,29 @@
+.empty-card {
+    max-width: $card-size;
+    border: 3px dashed gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    i {
+        font-size: 60px;
+    }
+
+    .text {
+        margin-top: 20px;
+
+        p {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,4 +1,4 @@
 <div>
     <?=DesafioLeo\Utility::showComponent('slide.php');?>
-    <h1>Home</h1>
+    <?=DesafioLeo\Utility::showComponent('courses.php');?>
 </div>

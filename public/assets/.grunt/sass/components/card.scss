@@ -1,0 +1,36 @@
+.card {
+    max-width: $card-size;
+    background-color: white;
+
+    .image {
+        max-width: 100%;
+
+        img {
+            object-fit: cover;
+            max-width: $card-size;
+        }
+
+    }
+
+    .info {
+        padding: 10px;
+
+        h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: $success-color;
+            padding: 8px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    }
+}

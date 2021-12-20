@@ -1,0 +1,30 @@
+.courses {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $background-color;
+
+    .content {
+        max-width: $content-large;
+        margin: auto;
+
+        .title {
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.281);
+            margin-bottom: 20px;
+
+            h1 {
+                margin: 0;
+                color: gray;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .grid {
+            display: grid;
+            gap: 15px 15px;
+            grid-template-columns: repeat(auto-fill, $card-size);
+            justify-content: center;
+        }
+    }
+}

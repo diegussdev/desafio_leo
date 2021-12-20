@@ -13,5 +13,6 @@
     <body>
         <?=DesafioLeo\Utility::showComponent('header.php');?>
         <?=eval($content)?>
+        <?=DesafioLeo\Utility::showComponent('footer.php');?>
     </body>
 </html>

@@ -10,4 +10,9 @@ class CourseController
     {
         Utility::showPage('create.php');
     }
+
+    public function edit()
+    {
+        Utility::showPage('edit.php');
+    }
 }

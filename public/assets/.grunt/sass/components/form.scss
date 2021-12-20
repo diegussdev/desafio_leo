@@ -1,0 +1,63 @@
+.form {
+    .content {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+            width: 200px;
+            height: 180px;
+        }
+
+        form {
+            .input {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 20px;
+
+                input,
+                textarea {
+                    background-color: white;
+                    border: none;
+                    padding: 10px;
+                }
+            }
+
+            .actions {
+                display: flex;
+                justify-content: end;
+                align-items: flex-end;
+
+                button {
+                    padding: 10px 15px;
+                    margin: 10px;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    width: 150px;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &.save {
+                        background-color: $success-color;
+                    }
+
+                    &.edit {
+                        background-color: $info-color;
+                    }
+
+                    &.delete {
+                        background-color: $error-color;
+                    }
+                }
+            }
+        }
+    }
+}

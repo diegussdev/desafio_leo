@@ -16,9 +16,10 @@
         border-color: transparent;
         width: 100%;
 
-        :focus {
+        &:focus {
             border-color: transparent;
             box-shadow: none;
+            outline: 0 none;
         }
     }
 

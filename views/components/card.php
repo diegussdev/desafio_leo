@@ -5,6 +5,6 @@
     <div class="info">
         <h1>Course Title</h1>
         <p>Lorem Ipsum is simply dummy text of the and Lorem Ipsum has the the 1500s.</p>
-        <a href="/"> Ver curso</a>
+        <a href="/course/edit?id=1"> Ver curso</a>
     </div>
 </div>

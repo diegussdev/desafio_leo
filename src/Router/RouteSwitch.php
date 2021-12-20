@@ -12,6 +12,7 @@ abstract class RouteSwitch
         'GET' => [
             'home' => [HomeController::class, 'index'],
             'course/create' => [CourseController::class, 'create'],
+            'course/edit' => [CourseController::class, 'edit'],
         ],
         'POST' => [
         ],

@@ -11,8 +11,11 @@
         <link href="/public/assets/css/main.min.css" rel="stylesheet">
     </head>
     <body>
+        <?=DesafioLeo\Utility::showComponent('modal.php');?>
         <?=DesafioLeo\Utility::showComponent('header.php');?>
         <?=eval($content)?>
         <?=DesafioLeo\Utility::showComponent('footer.php');?>
+
+        <script src="/public/assets/js/main.min.js"></script>
     </body>
 </html>

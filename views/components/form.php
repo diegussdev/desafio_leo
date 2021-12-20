@@ -11,6 +11,10 @@
                 <textarea name="description" id="text" cols="30" rows="4"></textarea>
             </div>
             <div class="input">
+                <label for="link">Link</label>
+                <input id="link" type="text">
+            </div>
+            <div class="input">
                 <label for="image">Imagem</label>
                 <input id="image" type="file">
             </div>

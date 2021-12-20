@@ -9,7 +9,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 <a href="/">Ver Curso</a>
             </div>
-            <img src="public/assets/img/slide_01.png" alt="">
+            <img src="/public/assets/img/slide_01.png" alt="">
         </div>
     </div>
     <div class="next">

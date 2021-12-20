@@ -2,6 +2,7 @@
 
 namespace DesafioLeo\Router;
 
+use DesafioLeo\Controllers\CourseController;
 use DesafioLeo\Controllers\HomeController;
 use DesafioLeo\Controllers\NotFoundController;
 
@@ -10,6 +11,7 @@ abstract class RouteSwitch
     const ROUTES = [
         'GET' => [
             'home' => [HomeController::class, 'index'],
+            'course/create' => [CourseController::class, 'create'],
         ],
         'POST' => [
         ],

@@ -2,7 +2,7 @@
     <div class="content">
         <div class="info">
             <div class="about">
-                <img src="public/assets/img/logo.png" alt="logo">
+                <img src="/public/assets/img/logo.png" alt="logo">
                 <p>Lorem Ipsum is simply. Lorem Ipsum industry's standard dummy text ever since the 1500s.</p>
             </div>
             <div class="box-right">

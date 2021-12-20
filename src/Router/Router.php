@@ -14,6 +14,7 @@ class Router extends RouteSwitch
 
         if ($_POST) {
             $arguments = $_POST;
+            $arguments['FILES'] = $_FILES;
         } elseif ($_GET) {
             $arguments = $_GET;
         }

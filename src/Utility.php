@@ -4,10 +4,10 @@ namespace DesafioLeo;
 
 class Utility
 {
-    public static function showPage($page)
+    public static function showPage($page, $data = [])
     {
         $path = "views/pages/{$page}";
-        self::showTemplate($path);
+        self::showTemplate($path, $data);
     }
 
     public static function showComponent($component, $data = [])
@@ -20,15 +20,23 @@ class Utility
         eval("?>{$file}");
     }
 
-    private static function showTemplate($path)
+    private static function showTemplate($path, $arguments = [])
     {
         global $content;
+        global $data;
+        $data = $arguments;
+
         $file = file_get_contents($path);
         $content = "?>{$file}";
 
         $path = "views/pages/layout.php";
         $file = file_get_contents($path);
         eval("?>{$file}");
+    }
+
+    public static function mountImageUrl($image)
+    {
+        return "/public/uploads/{$image}";
     }
 
     private static function bind($template, $data)

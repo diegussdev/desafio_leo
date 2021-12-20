@@ -29,7 +29,7 @@ class Connection
             $this->conn = new PDO("mysql:host={$this->dbHostname};dbname={$this->dbName}", $this->dbUsername, $this->dbPassword);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            die('ERROR: ' . $e->getMessage());
+            header('Location: /error');
         }
     }
 

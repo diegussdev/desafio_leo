@@ -12,6 +12,25 @@ class Course
     public $link;
     public $image;
 
+    public function build($data)
+    {
+        if (!$data['title']
+            || !$data['description']
+            || !$data['link']
+            || !$data['image']
+        ) {
+            return null;
+        }
+
+        $this->id = $data['id'];
+        $this->title = $data['title'];
+        $this->description = $data['description'];
+        $this->link = $data['link'];
+        $this->image = $data['image'];
+
+        return self;
+    }
+
     public function selectAll(
         string $where = null,
         string $order = null,
@@ -58,7 +77,6 @@ class Course
     private function getData()
     {
         return [
-            'course' => $this->course,
             'title' => $this->title,
             'link' => $this->link,
             'description' => $this->description,

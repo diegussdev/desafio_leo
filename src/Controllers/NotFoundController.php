@@ -6,8 +6,8 @@ use DesafioLeo\Utility;
 
 class NotFoundController
 {
-    public function notFoundPage()
+    public function errorPage()
     {
-        Utility::showPage('not-found.php');
+        Utility::showPage('generic-error.php');
     }
 }

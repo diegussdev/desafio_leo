@@ -1,0 +1,28 @@
+.generic-error {
+    background-color: $background-color;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .content {
+        max-width: $content-large;
+        margin: auto;
+        color: gray;
+        font-weight: bold;
+
+
+
+        h1 {
+            font-size: 80px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+}

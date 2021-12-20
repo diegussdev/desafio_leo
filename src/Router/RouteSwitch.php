@@ -15,6 +15,9 @@ abstract class RouteSwitch
             'course/edit' => [CourseController::class, 'edit'],
         ],
         'POST' => [
+            'course/delete' => [CourseController::class, 'delete'],
+            'course/store' => [CourseController::class, 'store'],
+            'course/update' => [CourseController::class, 'update'],
         ],
     ];
 
@@ -28,10 +31,10 @@ abstract class RouteSwitch
             $method = self::ROUTES['GET'][$name][1];
         } else {
             $class = NotFoundController::class;
-            $method = 'notFoundPage';
+            $method = 'errorPage';
         }
 
-        $this->executeRoute($class, $method, $arguments);
+        $this->executeRoute($class, $method, current($arguments));
     }
 
     function executeRoute($class, $method, $arguments)

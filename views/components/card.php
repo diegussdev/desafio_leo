@@ -1,10 +1,10 @@
 <div class="card">
     <div class="image">
-        <img src="https://st3.depositphotos.com/1606977/16957/i/600/depositphotos_169576438-stock-photo-top-view-of-people-studying.jpg" alt="course name">
+        <img src="{{course.image}}" alt="{{course.title}}">
     </div>
     <div class="info">
-        <h1>Course Title</h1>
-        <p>Lorem Ipsum is simply dummy text of the and Lorem Ipsum has the the 1500s.</p>
-        <a href="/course/edit?id=1"> Ver curso</a>
+        <h1>{{course.title}}</h1>
+        <p>{{course.description}}</p>
+        <a href="/course/edit?id={{course.id}}">Ver curso</a>
     </div>
 </div>

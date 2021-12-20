@@ -6,11 +6,11 @@ use DesafioLeo\Connection;
 
 class Course
 {
-    private $id;
-    private $title;
-    private $description;
-    private $link;
-    private $image;
+    public $id;
+    public $title;
+    public $description;
+    public $link;
+    public $image;
 
     public function selectAll(
         string $where = null,
@@ -48,6 +48,11 @@ class Course
     public function delete()
     {
         return (new Connection('courses'))->delete("id = '{$this->id}'");
+    }
+
+    public function toArray()
+    {
+        return get_object_vars($this);
     }
 
     private function getData()
